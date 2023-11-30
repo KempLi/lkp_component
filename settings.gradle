@@ -1,0 +1,3 @@
+include ':widgetlib'
+include ':app'
+rootProject.name = "Basic Component"
