@@ -30,6 +30,10 @@ android {
     }
 }
 
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
