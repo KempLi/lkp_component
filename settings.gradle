@@ -1,1 +1,1 @@
-include ':lkp_component'
+include ':library'
