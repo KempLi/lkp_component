@@ -22,10 +22,9 @@ import com.lkp.basiccomponent.R;
 
 
 /**
- *    author : Unstoppable & Android 轮子哥
- *    github : https://github.com/Someonewow/SubmitButton
- *    time   : 2016/12/31
- *    desc   : 带提交动画按钮
+ * @Author: KempLi
+ * @Date: 2023/12/19 9:41
+ * @Description: 带提交动画按钮
  */
 public final class SubmitButton extends AppCompatButton {
 

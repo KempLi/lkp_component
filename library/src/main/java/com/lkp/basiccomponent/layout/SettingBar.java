@@ -27,10 +27,9 @@ import com.lkp.basiccomponent.R;
 
 
 /**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2019/01/23
- *    desc   : 设置条自定义控件
+ * @Author: KempLi
+ * @Date: 2023/12/19 9:42
+ * @Description: 设置条自定义控件
  */
 public final class SettingBar extends FrameLayout {
 

@@ -14,10 +14,9 @@ import com.lkp.basiccomponent.R;
 
 
 /**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2019/08/23
- *    desc   : 按照比例显示的 FrameLayout
+ * @Author: KempLi
+ * @Date: 2023/12/19 9:42
+ * @Description: 按照比例显示的 FrameLayout
  */
 public final class RatioFrameLayout extends FrameLayout {
 

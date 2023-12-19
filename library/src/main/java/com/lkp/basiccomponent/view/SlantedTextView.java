@@ -26,10 +26,9 @@ import com.lkp.basiccomponent.R;
 
 
 /**
- *    author : HaoZhang & Android 轮子哥
- *    github : https://github.com/HeZaiJin/SlantedTextView
- *    time   : 2016/06/30
- *    desc   : 一个倾斜的 TextView，适用于标签效果
+ * @Author: KempLi
+ * @Date: 2023/12/19 9:41
+ * @Description: 一个倾斜的 TextView，适用于标签效果
  */
 @SuppressLint("RtlHardcoded")
 public final class SlantedTextView extends View {

@@ -15,10 +15,9 @@ import com.lkp.basiccomponent.R;
 import java.util.regex.Pattern;
 
 /**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2019/06/29
- *    desc   : 正则输入限制编辑框
+ * @Author: KempLi
+ * @Date: 2023/12/19 9:40
+ * @Description: 正则输入限制编辑框
  */
 public class RegexEditText extends AppCompatEditText implements InputFilter {
 

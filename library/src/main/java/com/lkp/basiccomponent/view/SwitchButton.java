@@ -23,10 +23,9 @@ import com.lkp.basiccomponent.R;
 
 
 /**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2019/02/20
- *    desc   : 高仿 ios 开关按钮
+ * @Author: KempLi
+ * @Date: 2023/12/19 9:41
+ * @Description: 高仿 ios 开关按钮
  */
 public final class SwitchButton extends View {
 

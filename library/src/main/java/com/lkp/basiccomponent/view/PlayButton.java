@@ -20,10 +20,9 @@ import com.lkp.basiccomponent.R;
 
 
 /**
- *    author : codeestX & Android 轮子哥
- *    github : https://github.com/codeestX/ENViews
- *    time   : 2021/09/12
- *    desc   : 播放暂停动效的按钮
+ * @Author: KempLi
+ * @Date: 2023/12/19 9:40
+ * @Description: 播放暂停动效的按钮
  */
 public final class PlayButton extends View {
 

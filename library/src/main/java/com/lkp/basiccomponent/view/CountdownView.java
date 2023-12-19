@@ -8,10 +8,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatTextView;
 
 /**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2018/10/18
- *    desc   : 验证码倒计时
+ * @Author: KempLi
+ * @Date: 2023/12/19 9:39
+ * @Description: 验证码倒计时
  */
 public final class CountdownView extends AppCompatTextView implements Runnable {
 

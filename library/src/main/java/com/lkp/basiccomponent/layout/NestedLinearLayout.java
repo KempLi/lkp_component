@@ -18,10 +18,9 @@ import androidx.core.view.NestedScrollingParentHelper;
 import androidx.core.view.ViewCompat;
 
 /**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2021/08/11
- *    desc   : 支持嵌套滚动的 LinearLayout
+ * @Author: KempLi
+ * @Date: 2023/12/19 9:42
+ * @Description: 支持嵌套滚动的 LinearLayout
  */
 public class NestedLinearLayout extends LinearLayout implements NestedScrollingChild, NestedScrollingParent {
 

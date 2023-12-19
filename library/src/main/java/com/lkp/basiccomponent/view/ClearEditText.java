@@ -16,10 +16,9 @@ import com.lkp.basiccomponent.R;
 
 
 /**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2018/10/18
- *    desc   : 带清除按钮的 EditText
+ * @Author: KempLi
+ * @Date: 2023/12/19 9:39
+ * @Description: 带清除按钮的 EditText
  */
 public final class ClearEditText extends RegexEditText
         implements View.OnTouchListener,
