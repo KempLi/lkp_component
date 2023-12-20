@@ -99,31 +99,40 @@ public final class SettingBar extends FrameLayout {
         final TypedArray array = getContext().obtainStyledAttributes(attrs, R.styleable.SettingBar);
 
         //处理边距
-        int horValue = (int) getResources().getDimension(R.dimen.dp_12);
-        int verValue = (int) getResources().getDimension(R.dimen.dp_15);
-        if (array.hasValue(R.styleable.SettingBar_bar_textPaddingVertical)) {
-            verValue = array.getDimensionPixelSize(R.styleable.SettingBar_bar_textPaddingVertical, (int) getResources().getDimension(R.dimen.dp_12));
-        }
+        int horValue = (int) getResources().getDimension(R.dimen.dp_15);
+        int verValue = (int) getResources().getDimension(R.dimen.dp_12);
+        int marLeftValue = (int) getResources().getDimension(R.dimen.dp_10);
         if (array.hasValue(R.styleable.SettingBar_bar_textPaddingHorizontal)) {
             horValue = array.getDimensionPixelSize(R.styleable.SettingBar_bar_textPaddingHorizontal, (int) getResources().getDimension(R.dimen.dp_15));
         }
-        setTextPadding(verValue, horValue);
-        //设置字体行高
-        if (array.hasValue(R.styleable.SettingBar_bar_leftTextLineSpaceAdd)) {
-            float mult = 1.0f;
-            if (array.hasValue(R.styleable.SettingBar_bar_leftTextLineSpaceMult)) {
-                mult = array.getFloat(R.styleable.SettingBar_bar_leftTextLineSpaceMult, 1.0f);
-            }
-            setLeftTextLineSpace(array.getDimensionPixelSize(R.styleable.SettingBar_bar_leftTextLineSpaceAdd, 0), mult);
+        if (array.hasValue(R.styleable.SettingBar_bar_textPaddingVertical)) {
+            verValue = array.getDimensionPixelSize(R.styleable.SettingBar_bar_textPaddingVertical, (int) getResources().getDimension(R.dimen.dp_12));
         }
-        if (array.hasValue(R.styleable.SettingBar_bar_rightTextLineSpaceAdd)) {
-            float mult = 1.0f;
-            if (array.hasValue(R.styleable.SettingBar_bar_rightTextLineSpaceMult)) {
-                mult = array.getFloat(R.styleable.SettingBar_bar_rightTextLineSpaceMult, 1.0f);
-            }
-            setRightTextLineSpace(array.getDimensionPixelSize(R.styleable.SettingBar_bar_rightTextLineSpaceAdd, 0), mult);
+        if (array.hasValue(R.styleable.SettingBar_bar_rightTextMarginLeft)) {
+            marLeftValue = array.getDimensionPixelSize(R.styleable.SettingBar_bar_rightTextMarginLeft, (int) getResources().getDimension(R.dimen.dp_10));
         }
+        setTextPadding(horValue, verValue, marLeftValue);
 
+        //设置左侧字体行高
+        int leftTextAdd = 0;
+        float leftTextMult = 1.0f;
+        if (array.hasValue(R.styleable.SettingBar_bar_leftTextLineSpaceAdd)) {
+            leftTextAdd =  array.getDimensionPixelSize(R.styleable.SettingBar_bar_leftTextLineSpaceAdd, 0);
+        }
+        if (array.hasValue(R.styleable.SettingBar_bar_leftTextLineSpaceMult)) {
+            leftTextMult = array.getFloat(R.styleable.SettingBar_bar_leftTextLineSpaceMult, 1.0f);
+        }
+        setLeftTextLineSpace(leftTextAdd, leftTextMult);
+        //设置右侧字体行高
+        int rightTextAdd = 0;
+        float rightTextMult = 1.0f;
+        if (array.hasValue(R.styleable.SettingBar_bar_rightTextLineSpaceAdd)) {
+            rightTextAdd =  array.getDimensionPixelSize(R.styleable.SettingBar_bar_rightTextLineSpaceAdd, 0);
+        }
+        if (array.hasValue(R.styleable.SettingBar_bar_rightTextLineSpaceMult)) {
+            rightTextMult = array.getFloat(R.styleable.SettingBar_bar_rightTextLineSpaceMult, 1.0f);
+        }
+        setRightTextLineSpace(rightTextAdd, rightTextMult);
         // 文本设置
         if (array.hasValue(R.styleable.SettingBar_bar_leftText)) {
             setLeftText(array.getString(R.styleable.SettingBar_bar_leftText));
@@ -229,9 +238,9 @@ public final class SettingBar extends FrameLayout {
     /**
      * 设置左边的文本
      */
-    public SettingBar setTextPadding(@StringRes int horValue, @StringRes int verValue) {
-        mLeftView.setPaddingRelative(horValue, verValue, horValue, verValue);
-        mRightView.setPaddingRelative(horValue, verValue, horValue, verValue);
+    public SettingBar setTextPadding(@StringRes int horValue, @StringRes int verValue, @StringRes int marLeftValue) {
+        mLeftView.setPaddingRelative(horValue, verValue, 0, verValue);
+        mRightView.setPaddingRelative(marLeftValue, verValue, horValue, verValue);
         return this;
     }
 
