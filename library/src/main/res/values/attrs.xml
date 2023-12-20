@@ -39,6 +39,8 @@
         <attr name="bar_leftTextColor" format="color" />
         <attr name="bar_leftTextSize" format="dimension" />
         <attr name="bar_leftTextHint" format="string"/>
+        <attr name="bar_leftTextLineSpaceAdd" format="dimension" />
+        <attr name="bar_leftTextLineSpaceMult" format="dimension" />
         <attr name="bar_leftDrawable" format="reference" />
         <attr name="bar_leftDrawablePadding" format="dimension" />
         <attr name="bar_leftDrawableSize" format="dimension" />
@@ -48,6 +50,9 @@
         <attr name="bar_rightTextColor" format="color" />
         <attr name="bar_rightTextSize" format="dimension" />
         <attr name="bar_rightTextHint" format="string"/>
+        <attr name="bar_rightTextLineSpaceAdd" format="dimension" />
+        <attr name="bar_rightTextLineSpaceMult" format="dimension" />
+        <attr name="bar_rightTextMarginLeft" format="dimension" />
         <attr name="bar_rightDrawable" format="reference" />
         <attr name="bar_rightDrawablePadding" format="dimension" />
         <attr name="bar_rightDrawableSize" format="dimension" />
@@ -57,6 +62,9 @@
         <attr name="bar_lineDrawable" format="reference|color" />
         <attr name="bar_lineSize" format="dimension" />
         <attr name="bar_lineMargin" format="dimension" />
+        <!--左右两边公共的-->
+        <attr name="bar_textPaddingVertical" format="dimension" />
+        <attr name="bar_textPaddingHorizontal" format="dimension" />
     </declare-styleable>
 
     <!-- 带提交动画按钮 -->
